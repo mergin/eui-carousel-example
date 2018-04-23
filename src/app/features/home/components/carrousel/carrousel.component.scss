@@ -31,6 +31,7 @@
         div {
             height: 8.4375vw;
             background-color: aquamarine; //DEBUG
+            cursor: pointer;
             &:not(:last-child) {
                 border-bottom: solid 0.5px #ffffff;
             }

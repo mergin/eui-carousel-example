@@ -18,11 +18,11 @@
     <!-- OPCION 2 -->
     <div class="row carrouselContainer">
         <div class="col-8 selectedSlide">
-            <h1>{{items[0].title}}</h1>
-            <p>{{items[0].subtitle}}</p>
+            <h1>{{selectedItem.title}}</h1>
+            <p>{{selectedItem.subtitle}}</p>
         </div>
         <div class="col allSlides">
-            <div *ngFor="let item of items">
+            <div *ngFor="let item of items" (click)="onSelect(item)">
                 <p>{{item.type | uppercase}}</p>
                 <h4>{{item.title}}</h4>
             </div>
