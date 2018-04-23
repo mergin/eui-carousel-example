@@ -17,12 +17,14 @@
 
     <!-- OPCION 2 -->
     <div class="row carrouselContainer">
-        <div class="col-8 selectedSlide">
+        <div class="col-8 selectedSlide" [ngStyle]="{'background-image': getUrl()}">
             <h1>{{selectedItem.title}}</h1>
             <p>{{selectedItem.subtitle}}</p>
         </div>
         <div class="col allSlides">
-            <div *ngFor="let item of items" (click)="onSelect(item)">
+            <div *ngFor="let item of items" 
+                 (click)="onSelect(item)" 
+                 [ngStyle]="{'background-image': getUrlItem(item)}">
                 <p>{{item.type | uppercase}}</p>
                 <h4>{{item.title}}</h4>
             </div>

@@ -3,4 +3,5 @@ export class ItemCarrousel {
     title: string;
     subtitle: string;
     type: string;
+    imgUrl: string;
 }

@@ -18,4 +18,12 @@ export class HomeCarrouselComponent implements OnInit {
     onSelect(item: ItemCarrousel): void {
         this.selectedItem = item;
     }
+
+    getUrl() {
+        return 'url(' + this.selectedItem.imgUrl + ')';
+    }
+
+    getUrlItem(item: ItemCarrousel) {
+        return 'url(' + item.imgUrl + ')';
+    }
 }
