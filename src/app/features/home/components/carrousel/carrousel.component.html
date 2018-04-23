@@ -1,3 +1,7 @@
 <ux-panel label="Carrousel">
-    Carrousel content
+    <div *ngFor="let item of items">
+        <h1>{{item.title}}</h1>
+        <p>{{item.subtitle}}</p>
+        <hr>
+    </div>
 </ux-panel>
