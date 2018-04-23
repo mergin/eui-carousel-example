@@ -1,7 +1,32 @@
-<ux-panel label="Carrousel">
-    <div *ngFor="let item of items">
-        <h1>{{item.title}}</h1>
-        <p>{{item.subtitle}}</p>
-        <hr>
+<!-- <ux-panel label="Carrousel"> -->
+    <!-- OPCION 1 -->
+    <!--
+    <div class="carrouselContainer">
+        <div class="selectedSlide">
+            <h1>{{items[0].title}}</h1>
+            <p>{{items[0].subtitle}}</p>
+        </div>
+        <div class="allSlides">
+            <div *ngFor="let item of items">
+                <p>{{item.type | uppercase}}</p>
+                <h4>{{item.title}}</h4>
+            </div>
+        </div>
     </div>
-</ux-panel>
+    -->
+
+    <!-- OPCION 2 -->
+    <div class="row carrouselContainer">
+        <div class="col-8 selectedSlide">
+            <h1>{{items[0].title}}</h1>
+            <p>{{items[0].subtitle}}</p>
+        </div>
+        <div class="col allSlides">
+            <div *ngFor="let item of items">
+                <p>{{item.type | uppercase}}</p>
+                <h4>{{item.title}}</h4>
+            </div>
+        </div>
+    </div>
+
+<!-- </ux-panel> -->

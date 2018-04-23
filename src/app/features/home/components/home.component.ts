@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
                 title: 'Growing grasses on the margins, the route to cost effective biomass crops',
                 // tslint:disable-next-line:max-line-length
                 subtitle: 'Technologies guaranteeing acceptable indoor air quality in EU buildings will be key to the market success of energy efficient solutions.',
-                type: 'RESULT IN BRIEF',
+                type: 'result IN BRIEF',
             },
             {
                 id: 2,
