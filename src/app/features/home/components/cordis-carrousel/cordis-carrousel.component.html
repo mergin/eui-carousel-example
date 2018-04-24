@@ -1,16 +1,29 @@
-<div class="row carrouselContainer">
+<div class="row carrouselContainer hidden-xs">
     <div class="col-8 selectedSlide" [ngStyle]="{'background-image': getUrl()}">
         <h1>{{selectedItem.title}}</h1>
         <p>{{selectedItem.subtitle}}</p>
         <ux-button>Read the {{selectedItem.type | titlecase}}</ux-button>
     </div>
     <div class="col allSlides">
-        <div *ngFor="let item of items"
-             (click)="onSelect(item)"
-             [ngClass]="{itemNotSelected: item.id != selectedItem.id}"
-             [ngStyle]="{'background': item.id == selectedItem.id ? getUrlItem(item) : '#000000'}">
+        <div *ngFor="let item of items" (click)="onSelect(item)" [ngClass]="{itemNotSelected: item.id != selectedItem.id}" [ngStyle]="{'background': item.id == selectedItem.id ? getUrlItem(item) : '#000000'}">
             <p>{{item.type | uppercase}}</p>
             <h4 class="line-clamp">{{item.title}}</h4>
         </div>
+    </div>
+</div>
+
+<div class="carrouselContainerMobile">
+    <div class="selectedSlide" [ngStyle]="{'background-image': getUrl()}">
+        <h1>{{selectedItem.title}}</h1>
+        <p>{{selectedItem.subtitle}}</p>
+        <ux-button>Read the {{selectedItem.type | titlecase}}</ux-button>
+
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li *ngFor="let item of items"
+                (click)="onSelect(item)"
+                [ngClass]="{active: item.id == selectedItem.id}">
+            </li>
+        </ol>
     </div>
 </div>

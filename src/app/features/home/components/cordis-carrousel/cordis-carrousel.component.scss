@@ -1,3 +1,15 @@
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .carrouselContainerMobile {
+        display: none !important;
+    }
+}
+
 .carrouselContainer {
     h1, h4, p {
         color: white;
@@ -82,9 +94,110 @@
     }
 }
 
+.carrouselContainerMobile {
+    height: 143.4375vw; //459px;
+    h1, h4, p {
+        color: white;
+    }
+    .selectedSlide {
+        position: relative;
+        height: 100%;
+        padding: 9.375vw 5.625vw 0 5.625vw; //30px 18px 0 18px;
+        background-size: cover;
+        h1 {
+            height: 45.3125vw; //145px;
+            font-size: 8.75vw; //28px;
+            font-weight: bold;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.04;
+            letter-spacing: normal;
+            margin: 0 0 6.25vw 0; //0 0 20px 0;
+        }
+        p {
+            height: 34.375vw; //110px;
+            font-size: 5.625vw; //18px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            line-height: 1.22;
+            letter-spacing: normal;
+            margin: 0 0 9.375vw 0; //0 0 30px 0;
+        }
+        ::ng-deep button {
+            width: 100%;
+            height: 15.625vw; //50px;
+            //box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 2px 2px 3px 0 rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0.625vw 1.25vw 0 rgba(0, 0, 0, 0.2), 0.625vw 0.625vw 0.9375vw 0 rgba(0, 0, 0, 0.3);
+            border-radius: 0;
+            span {
+                height: 5.625vw; //18px
+                font-size: 4.375vw; //14px
+                //font-family: Arial;
+                //font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.29;
+                letter-spacing: normal;
+            }
+        }
+    }
+}
+
 .line-clamp {
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+}
+
+// CALCULAR TODO A VW DE 320PX
+.carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    padding-left: 0; // override <ol> default
+    // Use the .carousel-control's width as margin so we don't overlay those
+    margin: 0 10px 30px 10px;
+    list-style: none;
+  
+    li {
+        position: relative;
+        flex: 0 1 auto;
+        width: 14px;
+        height: 14px;
+        text-indent: -999px;
+        margin: 0 12px;
+        border-radius: 100%;
+        border: 2px solid #ffffff;
+        background-color: #ffffff;
+        box-shadow: 1px 2px 4px 0 rgba(0, 0, 0, 0.5);
+  
+        // Use pseudo classes to increase the hit area by 10px on top and bottom.
+        &::before {
+            position: absolute;
+            top: -10px;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 10px;
+            content: "";
+        }
+        &::after {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            display: inline-block;
+            width: 100%;
+            height: 10px;
+            content: "";
+        }
+        &.active {
+            background-color: #004494;
+        }
+    }
 }
