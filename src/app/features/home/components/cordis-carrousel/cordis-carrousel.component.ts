@@ -3,9 +3,10 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ItemCarrousel } from './../../../../core/models/ItemCarrousel.model';
 
 @Component({
-    selector: 'app-carrousel',
-    templateUrl: './carrousel.component.html',
-    styleUrls: ['./carrousel.component.scss']
+    // tslint:disable-next-line:component-selector
+    selector: 'cordis-carrousel',
+    templateUrl: './cordis-carrousel.component.html',
+    styleUrls: ['./cordis-carrousel.component.scss']
 })
 export class HomeCarrouselComponent implements OnInit {
     @Input() items: ItemCarrousel[];

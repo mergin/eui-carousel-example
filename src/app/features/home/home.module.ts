@@ -5,7 +5,7 @@ import { SharedModule } from '../../shared/shared.module';
 import { HomeRoutingModule } from './home-routing.module';
 
 import { HomeComponent } from './components/home.component';
-import { HomeCarrouselComponent } from './components/carrousel/carrousel.component';
+import { HomeCarrouselComponent } from './components/cordis-carrousel/cordis-carrousel.component';
 
 @NgModule({
     imports: [
