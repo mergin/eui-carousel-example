@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { ItemCarrousel } from './../../../../core/models/ItemCarrousel.model';
 
 @Component({
-    selector: 'app-carrusel',
+    selector: 'app-carrousel',
     templateUrl: './carrousel.component.html',
     styleUrls: ['./carrousel.component.scss']
 })

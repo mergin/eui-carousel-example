@@ -46,6 +46,14 @@ export class HomeComponent implements OnInit {
                 type: 'NEWS',
                 imgUrl: 'http://irigare.com/wp-content/uploads/green-trees-nature-uhd-16-9-luxury-furthermore-forest-spring.jpg',
             },
+            {
+                id: 5,
+                // tslint:disable-next-line:max-line-length
+                title: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia ullam commodi sint dolore quam reprehenderit soluta esse amet cupiditate veniam.',
+                subtitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, laborum?',
+                type: 'interviews',
+                imgUrl: 'https://media.istockphoto.com/photos/various-bacteria-cells-and-virus-picture-id637429506?s=2048x2048',
+            },
         ];
     }
 

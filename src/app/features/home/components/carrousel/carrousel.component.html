@@ -20,6 +20,7 @@
         <div class="col-8 selectedSlide" [ngStyle]="{'background-image': getUrl()}">
             <h1>{{selectedItem.title}}</h1>
             <p>{{selectedItem.subtitle}}</p>
+            <ux-button>Read the {{selectedItem.type | titlecase}}</ux-button>
         </div>
         <div class="col allSlides">
             <div *ngFor="let item of items" 
@@ -27,7 +28,7 @@
                  [ngClass]="{itemNotSelected: item.id != selectedItem.id}"
                  [ngStyle]="{'background': item.id == selectedItem.id ? getUrlItem(item) : '#000000'}">
                 <p>{{item.type | uppercase}}</p>
-                <h4>{{item.title}}</h4>
+                <h4 class="line-clamp">{{item.title}}</h4>
             </div>
         </div>
     </div>
