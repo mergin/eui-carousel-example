@@ -98,6 +98,7 @@
     height: 143.4375vw; //459px;
     h1, h4, p {
         color: white;
+        overflow: hidden
     }
     .selectedSlide {
         position: relative;
