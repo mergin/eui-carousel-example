@@ -16,6 +16,8 @@ import { SearchInputComponent } from './components/shell/search-input/search-inp
 
 import { SharedModule } from '../shared/shared.module';
 
+import { CordisService } from './services/cordis.service';
+
 @NgModule({
     imports: [
         SharedModule,
@@ -36,7 +38,8 @@ import { SharedModule } from '../shared/shared.module';
             provide: REDUCER_TOKEN,
             deps: [],
             useFactory: getReducers
-        }
+        },
+        CordisService
     ]
 })
 export class CoreModule {
