@@ -10,6 +10,7 @@
     }
 }
 
+// VW calculated from 1280px desktop
 .carrouselContainer {
     h1, h4, p {
         color: white;
@@ -94,6 +95,7 @@
     }
 }
 
+// VW calculated from 320px mobile
 .carrouselContainerMobile {
     height: 143.4375vw; //459px;
     h1, h4, p {
@@ -150,6 +152,9 @@
     display: -webkit-box;
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
+    &.clamp-5 {
+        -webkit-line-clamp: 5;
+    }
 }
 
 .carousel-indicators {

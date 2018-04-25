@@ -14,8 +14,8 @@
 
 <div class="carrouselContainerMobile">
     <div class="selectedSlide" [ngStyle]="{'background-image': getUrl()}">
-        <h1>{{selectedItem.title}}</h1>
-        <p>{{selectedItem.subtitle}}</p>
+        <h1 class="line-clamp clamp-5">{{selectedItem.title}}</h1>
+        <p class="line-clamp clamp-5">{{selectedItem.subtitle}}</p>
         <ux-button>Read the {{selectedItem.type | titlecase}}</ux-button>
 
         <!-- Indicators -->

@@ -39,7 +39,8 @@ export class CordisService {
             id: 5,
             // tslint:disable-next-line:max-line-length
             title: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, quod laboriosam! Atque, assumenda quisquam incidunt laudantium molestiae odio animi voluptates unde cupiditate ex provident inventore, suscipit odit modi maiores vitae?',
-            subtitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, laborum?',
+            // tslint:disable-next-line:max-line-length
+            subtitle: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi, libero recusandae magnam eos praesentium quasi consequatur earum aperiam culpa totam ipsum eligendi corporis non, nisi illum similique? Dolorum repellat ad numquam nemo, mollitia accusamus amet, voluptates deleniti quod possimus ipsam enim aperiam sit molestias suscipit! Autem corrupti maxime qui odit.',
             type: 'interviews',
             imgUrl: 'https://media.istockphoto.com/photos/various-bacteria-cells-and-virus-picture-id637429506?s=2048x2048',
         },
