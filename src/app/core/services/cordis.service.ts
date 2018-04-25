@@ -19,7 +19,8 @@ export class CordisService {
             title: 'Supercomputing: a key cornerstone of the data-driven European economy',
             subtitle: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, laborum?',
             type: 'RESULTS PACK',
-            imgUrl: 'http://ognature.com/wp-content/uploads/2017/10/beach-colors-beautiful-nature-hd-holiday-desktop-wallpaper.jpg',
+            // imgUrl: 'http://ognature.com/wp-content/uploads/2017/10/beach-colors-beautiful-nature-hd-holiday-desktop-wallpaper.jpg',
+            imgUrl: 'https://st.depositphotos.com/1141522/4768/i/950/depositphotos_47681805-stock-photo-flask-with-clear-water-and.jpg',
         },
         {
             id: 3,
